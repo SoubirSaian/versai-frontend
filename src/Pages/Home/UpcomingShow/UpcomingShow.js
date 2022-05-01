@@ -1,3 +1,5 @@
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import  Grid from '@mui/material/Grid';
 import React, {useState, useEffect } from 'react';
 import ShowDisplay from '../ShowDisplay/ShowDisplay';
@@ -14,11 +16,16 @@ const UpcomingShow = () => {
     },[]);
     //   console.log(shows);
     return (
-        <Grid container spacing={2} sx={{px: '80px',backgroundColor: '#111229'}}>
-            {
-              shows &&  shows.map(show => <ShowDisplay key={show.pname} show={show}></ShowDisplay> )
-            }
-        </Grid>
+        <Box sx={{px: '80px',backgroundColor: '#111229'}}>
+            <Typography variant='h2' sx={{color: '#fff',pt: '15px',pb: '15px',fontWeight: '400',fontSize: '32px'}}>
+                Upcoming Shows
+            </Typography>
+            <Grid container spacing={2} >
+                {
+                    shows &&  shows.map(show => <ShowDisplay key={show.pname} show={show}></ShowDisplay> )
+                }
+            </Grid>
+        </Box>
     );
 };
 
