@@ -1,12 +1,16 @@
 import React from 'react';
 import './Header.css';
+import NavBar from '../NavBar/NavBar';
 import  Typography  from '@mui/material/Typography';
 import CircularProgress from '../CircularProgress/CircularProgress';
+
 
 
 const Header = () => {
     return (
         <div className='header'>
+            <NavBar></NavBar>
+
             <Typography variant='h2' component='div' sx={{pt:'200px',pl:'300px',color:'#fff'}}>
                     Cari Cari
             </Typography>
