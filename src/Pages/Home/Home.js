@@ -4,6 +4,7 @@ import './Home.css';
 import Review from './Review/Review';
 import UpcomingShow from './UpcomingShow/UpcomingShow';
 
+    //   this is home page 
 const Home = () => {
     return (
         <div className='homepage'>

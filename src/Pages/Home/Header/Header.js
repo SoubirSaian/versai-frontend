@@ -5,10 +5,12 @@ import  Typography  from '@mui/material/Typography';
 import CircularProgress from '../CircularProgress/CircularProgress';
 
 
+        //   header section 
 
 const Header = () => {
     return (
         <div className='header'>
+                  {/* navigation bar added  */}
             <NavBar></NavBar>
 
             <Typography variant='h2' component='div' sx={{pt:'200px',pl:'300px',color:'#fff'}}>
@@ -22,7 +24,7 @@ const Header = () => {
                 artists and never miss out.
                     
             </Typography>
-
+                    {/* circular progress bar  */}
             <CircularProgress></CircularProgress>
         </div>
     );

@@ -14,9 +14,11 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-// import { Menu } from '@mui/material';
+
 
 import logoimg from '../../../images/image 52.png'
+
+        //  navigation bar section 
 
 const pages = ['Help', 'Account'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -86,14 +88,6 @@ const NavBar = () => {
     <AppBar position="static" style={{backgroundColor: 'transparent',boxShadow: '0px 0px 0px 0px'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-         {/* <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-          >
-            {logoimg}
-          </Typography>  */}
 
           <img src={logoimg} alt="logo"   />
 
@@ -140,7 +134,7 @@ const NavBar = () => {
 
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" >{page}</Typography>
+                  <Typography >{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>

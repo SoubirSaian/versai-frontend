@@ -4,10 +4,10 @@ import  Grid from '@mui/material/Grid';
 import React, {useState, useEffect } from 'react';
 import ShowDisplay from '../ShowDisplay/ShowDisplay';
 
-
+            //  upcoming shows section 
 const UpcomingShow = () => {
     const [shows,setShows] = useState([]);
-
+                // fetching local api data 
     useEffect(()=>{
         fetch('./shows.json')
             .then(res => res.json())
@@ -16,7 +16,7 @@ const UpcomingShow = () => {
     },[]);
     //   console.log(shows);
     return (
-        <Box sx={{px: '80px',backgroundColor: '#111229'}}>
+        <Box sx={{pt: '70px',px: '80px',backgroundColor: '#111229'}}>
             <Typography variant='h2' sx={{color: '#fff',pt: '15px',pb: '15px',fontWeight: '400',fontSize: '32px'}}>
                 Upcoming Shows
             </Typography>

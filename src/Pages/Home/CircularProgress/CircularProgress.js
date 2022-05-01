@@ -4,6 +4,8 @@ import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import './CircularProgress.css';
 
+        // circular progress bar section 
+
 const CircularProgress = () => {
 
     const percentage1 = 66;
@@ -12,12 +14,13 @@ const CircularProgress = () => {
     const percentage4 = 75;
 
     return (
-        <Grid container spacing={0} sx={{mt: '200px',mx: '30px'}}>
-            <Grid item sm={12} md={3}>
+        <Grid container spacing={0} sx={{mt: '200px', ml: '60px'}}>
+            <Grid item md={3}>
                 <CircularProgressbar
                     className='circular-progress'
                     value={percentage1}
-                    text={`${percentage1}`}
+                    text={`${percentage1} %`}
+                    
                     styles={buildStyles({
                         // Rotation of path and trail, in number of turns (0-1)
                         rotation: 0.25,
@@ -35,18 +38,18 @@ const CircularProgress = () => {
                         // pathTransition: 'none',
 
                         // Colors
-                        pathColor: `#f5f5f5`,
+                        pathColor: ``,
                         textColor: '#fff',
                         trailColor: 'black',
                         backgroundColor: 'black',
                 })}
                 />;
             </Grid>
-            <Grid item sm={12} md={3}>
+            <Grid item md={3}>
                 <CircularProgressbar
                     className='circular-progress'
                     value={percentage2}
-                    text={`${percentage2}`}
+                    text={`${percentage2} %`}
                     styles={buildStyles({
                         // Rotation of path and trail, in number of turns (0-1)
                         rotation: 0.25,
@@ -71,11 +74,11 @@ const CircularProgress = () => {
                 })}
                 />;
             </Grid>
-            <Grid item sm={12} md={3}>
+            <Grid item md={3}>
                 <CircularProgressbar
                     className='circular-progress'
                     value={percentage3}
-                    text={`${percentage3}`}
+                    text={`${percentage3} %`}
                     styles={buildStyles({
                         // Rotation of path and trail, in number of turns (0-1)
                         rotation: 0.25,
@@ -100,11 +103,11 @@ const CircularProgress = () => {
                 })}
                 />;
             </Grid>
-            <Grid item sm={12} md={3}>
+            <Grid item md={3}>
                 <CircularProgressbar
                     className='circular-progress'
                     value={percentage4}
-                    text={`${percentage4}`}
+                    text={`${percentage4} %`}
                     styles={buildStyles({
                         // Rotation of path and trail, in number of turns (0-1)
                         rotation: 0.25,

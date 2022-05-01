@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import React from 'react';
 
+        //  display upcoming showing component 
 const ShowDisplay = (props) => {
     const {category,pname,img} = props.show;
     return (

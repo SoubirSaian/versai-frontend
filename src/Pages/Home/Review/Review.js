@@ -5,7 +5,10 @@ import Typography from '@mui/material/Typography';
 
 import reimg1 from '../../../images/review3.png'
 
-
+    // review section 
+    // here I have not used local api 
+    // just simply implented it 
+    
 const Review = () => {
     return (
         <Box sx={{backgroundColor: '#0a0b1a', pt: '30px',px: '70px',pb: '100px'}}>
